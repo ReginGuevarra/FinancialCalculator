@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Financial Calculators</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <h1>Calculate Mortgage Payment</h1>
+            <div>
+                <input placeholder="principal" id="mortgage-principal" />
+                <input placeholder="interest rate" id="mortgage-rate" />
+                <input placeholder="loan term (years)" id="mortgage-term" />
+    
+                <button id="mortgage-submit" onclick="calculateMortgage()">submit</button>
+                <button id="mortgage-reset" onclick="resetMortgage()">reset</button>
+
+                <div id="monthly-payment"></div>
+                <div id="total-interest"></div>
+            </div>
+        </div>
+
+        <div>
+            <h1>Calculate CD</h1>
+            <div>
+                <input placeholder="initial deposit" id="cd-initial-deposit" />
+                <input placeholder="interest-rate" id="cd-interest-rate" />
+                <input placeholder="term length (years)" id="cd-term" />
+
+                <button onclick="calculateCD()">submit</button>
+
+                <div id="total-account-value"></div>
+            </div>
+        </div>
+        
+        <div>
+            <h1>Calculate Annuity</h1>
+            <div>
+                <input placeholder="monthy payout" id="annuity-monthly-payout" />
+                <input placeholder="interest-rate" id="annuity-interest-rate" />
+                <input placeholder="term length (years)" id="annuity-term" />
+
+                <button onclick="calculateAnnuity()">submit</button>
+
+                <div id="annuity-original-deposit"></div>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
